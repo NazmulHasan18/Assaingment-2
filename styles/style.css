@@ -180,7 +180,7 @@ header {
 }
 
 /* ---------fact start here--------- */
-.fact-container {
+.fact-container, .sponsor-container {
     max-width: 1440px;
     width: 100%;
     margin: 100px auto 0;
@@ -223,4 +223,24 @@ header {
 }
 .fact > .primary-description{
     padding: 0;
+}
+/* -------------Sponsors Style Here but container style in fact container------------ */
+.sponsor-container{
+    margin-bottom: 100px;
+}
+.sponsor-info{
+    max-width: 545px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-logo{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 155px;
+    align-items: center;
+    margin-top: 20px;
+}
+.sponsor-logo img{
+    filter: grayscale(100%);
 }
