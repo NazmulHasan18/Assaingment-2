@@ -104,7 +104,8 @@ header {
     align-items: center;
     max-width: 1320px;
     width: 95%;
-    height: 710px;
+    min-height: 710px;
+    height: 100%;
     margin: 100px auto 0;
 }
 
@@ -133,8 +134,8 @@ header {
     display: flex;
     gap: 55px;
     max-width: 1440px;
-    height: 1060px;
-    width: 100%;
+    min-height: 1060px;
+    width: 95%;
     margin: 100px auto 0;
 }
 
@@ -169,6 +170,7 @@ header {
 
 .feature-info-btn {
     margin-bottom: 10px;
+    
 }
 
 .feature-info-btn p {
@@ -248,6 +250,7 @@ header {
 /* -------------Sponsors Style Here but container style in fact container------------ */
 .sponsor-container {
     margin-bottom: 100px;
+    width: 95%;
 }
 
 .sponsor-info {
@@ -259,20 +262,21 @@ header {
 
 .sponsor-logo {
     display: flex;
-    justify-content: space-between;
-    column-gap: 155px;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 20px;
 }
 
 .sponsor-logo img {
     filter: grayscale(100%);
+    width: 160px;
 }
 
 /*--------------- here starts footer style------------- */
 footer {
     /* height: 400px; */
-    height: 900px;
+    min-height: 900px;
     background-color: darkslateblue;
 }
 
@@ -281,7 +285,7 @@ footer {
     border-radius: 8px;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 /* -------------Here is an extra section added in footer------------- */
@@ -318,7 +322,7 @@ footer {
     border-radius: 10px;
     border: 0;
     width: 80%;
-    padding: 30px 10px;
+    padding: 20px 30px;
     margin: 10px 0;
 }
 

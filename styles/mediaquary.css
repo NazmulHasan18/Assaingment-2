@@ -1,0 +1,80 @@
+@media only screen and (max-width:576px) {
+
+    /* common change */
+    .primary-title {
+        font-size: 2.3em;
+        margin-bottom: 20px;
+    }
+
+    .navbar,
+    .navbar ul,
+    .quick-feature-container,
+    .sf-container,
+    .facts {
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+    }
+/* Common Changes End */
+/* -----------------Banner Quarry Starts Here -----------------*/
+    .banner {
+        margin-top: 50px;
+        width: 95%;
+    }
+
+    .banner-title {
+        font-size: 54px;
+    }
+/* --------------Quick Feature Quarry------------------ */
+    .quick-feature-image-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+
+    .quick-feature-info {
+        width: 95%;
+    }
+    /* --------------------Feature Quarry Starts Here------------ */
+    .feature-title{
+        border: 0;
+    }
+    .feature-info,
+    .feature-info-img {
+        width: 95%;
+    }
+
+    .feature-info-img {
+        min-height: 700px;
+        justify-content: center;
+        background-size: contain;
+    }
+
+    .feature-info-btn {
+        width: 60%;
+    }
+
+    .feature-info-btn p {
+        font-size: 2em;
+    }
+
+    .fact-container {
+        text-align: center;
+    }
+/* ------------Sponsor Quarry Here-------------- */
+    .sponsor-logo {
+        gap: 30px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+/* ------------Footer Quarry With EXTRA SECTION-------------- */
+    footer {
+        padding: 0 30px 50px;
+    }
+
+    .extra-section {
+        flex-direction: column;
+    }
+
+
+}
