@@ -168,7 +168,7 @@ header {
 }
 
 .feature-info-btn {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .feature-info-btn p {
@@ -180,15 +180,20 @@ header {
 }
 
 /* ---------fact start here--------- */
-.fact-container, .sponsor-container, .footer {
+.fact-container,
+.sponsor-container,
+.main-footer,
+.extra-section {
     max-width: 1440px;
     width: 100%;
     margin: 100px auto 0;
 }
-.fact-container > .primary-description{
+
+.fact-container>.primary-description {
     max-width: 542px;
     width: 90%;
 }
+
 .facts {
     display: flex;
     justify-content: space-around;
@@ -207,8 +212,21 @@ header {
     margin-top: 70px;
 }
 
+/*--------------- Extra animation------------ */
+@keyframes slider {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: rgba(255, 144, 14, 0.1);
+    }
+}
+
+/* -----------End of Animation-------------- */
 .fact:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
+    animation: slider 0.5s ease-in-out 0s 1 normal forwards;
 }
 
 .fact img {
@@ -220,32 +238,91 @@ header {
     font-weight: 600;
     font-size: 45px;
     color: #424242;
+
 }
-.fact > .primary-description{
+
+.fact>.primary-description {
     padding: 0;
 }
+
 /* -------------Sponsors Style Here but container style in fact container------------ */
-.sponsor-container{
+.sponsor-container {
     margin-bottom: 100px;
 }
-.sponsor-info{
+
+.sponsor-info {
     max-width: 545px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
-.sponsor-logo{
+
+.sponsor-logo {
     display: flex;
     justify-content: space-between;
     column-gap: 155px;
     align-items: center;
     margin-top: 20px;
 }
-.sponsor-logo img{
+
+.sponsor-logo img {
     filter: grayscale(100%);
 }
-.footer{
+
+/*--------------- here starts footer style------------- */
+footer {
+    /* height: 400px; */
+    height: 900px;
+    background-color: darkslateblue;
+}
+
+.main-footer {
     background-color: #FFF4E7;
     border-radius: 8px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+/* -------------Here is an extra section added in footer------------- */
+.extra-section {
+    display: flex;
+    justify-content: center;
+    /* align-items: enter; */
+    padding-top: 50px;
+    gap: 100px;
+}
+
+.footer-title,
+.footer-description {
+    color: white;
+    max-width: 80%;
+}
+
+.number,
+.email,
+.reminder {
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.social-site a {
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+}
+
+.customer-info input {
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    width: 80%;
+    padding: 30px 10px;
+    margin: 10px 0;
+}
+
+.customer-info>.primary-btn {
+    margin-top: 10px;
+    font-size: 20px;
 }
