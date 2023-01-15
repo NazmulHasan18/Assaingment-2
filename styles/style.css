@@ -20,6 +20,7 @@ img {
 .primary-description {
     font-size: 16px;
     color: #727272;
+    padding: 30px 0;
 }
 
 .primary-btn {
@@ -34,9 +35,10 @@ img {
 }
 
 /* Header style */
-header{
+header {
     background-color: rgba(255, 144, 14, 0.1);
 }
+
 /* ----------- Navbar Style----------------- */
 .navbar {
     display: flex;
@@ -89,7 +91,86 @@ header{
 .banner-description {
     padding: 30px 0;
 }
-.banner img{
+
+.banner img {
     padding-bottom: 45px;
 }
+
 /* Here Start Main Section */
+.quick-feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    max-width: 1320px;
+    width: 95%;
+    height: 710px;
+    margin: 100px auto 0;
+}
+
+.quick-feature-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 55%;
+}
+
+.quick-feature-info {
+    width: 45%;
+}
+
+.gray-name {
+    font-weight: 500;
+    color: #727272;
+}
+
+.golden-name {
+    color: #FF900E;
+}
+
+/* here start feature section style */
+.sf-container {
+    display: flex;
+    gap: 55px;
+    max-width: 1440px;
+    height: 1060px;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.feature-info {
+    width: 45%;
+}
+.feature-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 22px;
+}
+.sub-feature-info {
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.feature-info-img {
+    width: 55%;
+}
+
+.feature-info-img {
+    background-image: url(../images/architect.png);
+    background-size: 708px 982px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    align-items: flex-end;
+}
+
+.feature-info-btn {
+    margin-bottom: 0;
+}
+.feature-info-btn p{
+    font-size: 3.9em;
+}
+.sf-info-description {
+    padding: 10px 0;
+}
